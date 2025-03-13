@@ -1,0 +1,93 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    background-image: url('pixel-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+main {
+    padding: 20px;
+}
+
+.character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.character {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 5px solid #ffcc00;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.character-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #ffcc00;
+    image-rendering: pixelated;
+}
+
+.character-info {
+    margin-top: 15px;
+}
+
+.character-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffcc00;
+}
+
+.character-info p {
+    font-size: 0.8em;
+    line-height: 1.5;
+    margin: 5px 0;
+    color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #ffcc00;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #ffcc00;
+}
+
+@media (max-width: 768px) {
+    .character {
+        width: 100%;
+    }
+
+    .character-info p {
+        font-size: 0.7em;
+    }
+}
